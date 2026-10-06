@@ -1,0 +1,31 @@
+---
+title: Technical Architecture
+description: Explanation of the Tech stack, why it was chosen and how it interlocks.
+---
+
+Explanation of the Tech stack, why it was chosen and how it interlocks.
+
+## Basics
+
+- The Basic Setup looks like this
+
+import { Card } from '@astrojs/starlight/components';
+
+<div className="svg-card-wrapper">
+  <Card>
+    ![My Diagram](/HermesServerArch.svg)
+  </Card>
+</div>
+
+<style>{`
+  .svg-card-wrapper svg, .svg-card-wrapper img {
+    background-color: transparent;
+    
+    padding: 1rem;
+    display: block;
+    margin: 0 auto;
+  }
+`}</style>
+- The End Device is the device running the [App](https://github.com/Levi67/Hermes-Trading)
+- The Firebase is the google online service setup
+- The Hermes Server Application is the selfhosted [Server](https://github.com/Levi67/Hermes-Trading-Server)
